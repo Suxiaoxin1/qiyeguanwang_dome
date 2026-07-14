@@ -14,6 +14,8 @@ export interface Case {
   description: string;
   gradient: string;
   year: string;
+  imageUrl: string;
+  results: string[];
 }
 
 export interface News {
@@ -69,6 +71,8 @@ export const cases: Case[] = [
     description: "为百年茶庄注入当代东方美学，完成从品牌策略到包装系统的全链路升级，季度销量提升 40%。",
     gradient: "case-gradient-1",
     year: "2024",
+    imageUrl: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Minimalist%20Chinese%20tea%20brand%20visual%2C%20dried%20tea%20leaves%20on%20dark%20slate%2C%20warm%20amber%20ceramic%20teapot%2C%20soft%20natural%20light%2C%20premium%20packaging%2C%20editorial%20photography%20style%2C%20muted%20earth%20tones&image_size=landscape_16_9",
+    results: ["季度销量提升 40%", "包装识别度提升 65%", "进入 12 家高端买手店"],
   },
   {
     id: "c2",
@@ -78,6 +82,8 @@ export const cases: Case[] = [
     description: "打造高端财富管理数字门户，以沉稳的深蓝色调与精准的信息架构重塑客户信任感。",
     gradient: "case-gradient-2",
     year: "2024",
+    imageUrl: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Modern%20luxury%20finance%20brand%20visual%2C%20glass%20skyscraper%20reflection%20at%20dusk%2C%20deep%20navy%20blue%20and%20gold%20accents%2C%20abstract%20data%20visualization%2C%20premium%20corporate%20aesthetic%2C%20cinematic%20lighting&image_size=landscape_16_9",
+    results: ["用户停留时长提升 85%", "线上咨询转化率提升 30%", "设计系统覆盖 40+ 页面"],
   },
   {
     id: "c3",
@@ -87,6 +93,8 @@ export const cases: Case[] = [
     description: "为新兴户外品牌建立野性而精致的视觉语言，帮助其在众筹阶段即获得超额认购。",
     gradient: "case-gradient-3",
     year: "2023",
+    imageUrl: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Premium%20outdoor%20adventure%20brand%20visual%2C%20rugged%20mountain%20peak%20at%20golden%20hour%2C%20camping%20gear%20and%20hiking%20boots%2C%20wild%20nature%2C%20editorial%20adventure%20photography%2C%20earthy%20green%20and%20terracotta%20tones&image_size=landscape_16_9",
+    results: ["众筹达成率 230%", "社交媒体互动率提升 120%", "品牌搜索量增长 5 倍"],
   },
   {
     id: "c4",
@@ -96,6 +104,8 @@ export const cases: Case[] = [
     description: "将传统琉璃工艺转化为现代展陈语言，设计 800 ㎡沉浸式艺术体验空间。",
     gradient: "case-gradient-4",
     year: "2023",
+    imageUrl: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Contemporary%20glass%20art%20exhibition%20space%2C%20colorful%20glass%20sculptures%2C%20dramatic%20spotlighting%2C%20immersive%20gallery%20interior%2C%20reflections%20and%20refractions%2C%20artistic%20museum%20aesthetic&image_size=landscape_16_9",
+    results: ["月均访客 15,000+", "平均停留时长 45 分钟", "获 4 家设计媒体报道"],
   },
   {
     id: "c5",
@@ -105,6 +115,8 @@ export const cases: Case[] = [
     description: "帮助 STEM 教育机构完成品牌升级，以「成长即探索」为核心概念辐射家庭用户。",
     gradient: "case-gradient-5",
     year: "2022",
+    imageUrl: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=STEM%20education%20brand%20visual%2C%20children%20exploring%20science%20laboratory%2C%20colorful%20robotics%20and%20coding%20blocks%2C%20bright%20curious%20atmosphere%2C%20modern%20learning%20space%2C%20soft%20pastel%20accents&image_size=landscape_16_9",
+    results: ["新增校区 8 家", "品牌认知度提升 90%", "获客成本降低 35%"],
   },
   {
     id: "c6",
@@ -114,6 +126,8 @@ export const cases: Case[] = [
     description: "为精品度假酒店建立宁静奢华的视觉识别系统，贯穿线上预订与线下入住体验。",
     gradient: "case-gradient-6",
     year: "2022",
+    imageUrl: "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Luxury%20boutique%20hotel%20brand%20visual%2C%20serene%20minimalist%20hotel%20suite%2C%20soft%20linen%20bedding%2C%20warm%20wooden%20accents%2C%20zen%20garden%20view%20through%20floor-to-ceiling%20window%2C%20tranquil%20hospitality%20aesthetic&image_size=landscape_16_9",
+    results: ["入住率提升至 92%", "OTA 评分从 4.2 升至 4.8", "复购率提升 28%"],
   },
 ];
 

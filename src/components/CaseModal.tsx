@@ -26,9 +26,26 @@ export function CaseModal() {
 
         <span className="text-gold text-sm tracking-widest uppercase">{caseItem.category} / {caseItem.year}</span>
         <h2 className="font-display text-4xl md:text-5xl text-ivory mt-4 mb-6">{caseItem.title}</h2>
+
+        <div className="relative h-64 md:h-80 w-full mb-8 overflow-hidden">
+          <img
+            src={caseItem.imageUrl}
+            alt={caseItem.title}
+            className="w-full h-full object-cover"
+          />
+        </div>
+
         <p className="text-ivory/80 leading-relaxed text-lg mb-8">{caseItem.description}</p>
 
-        <div className="flex flex-wrap gap-3 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+          {caseItem.results.map((result) => (
+            <div key={result} className="border border-ivory/10 p-4 text-center">
+              <p className="text-gold font-display text-lg">{result}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="flex flex-wrap gap-3 mb-4">
           {caseItem.tags.map((tag) => (
             <span
               key={tag}
@@ -38,8 +55,6 @@ export function CaseModal() {
             </span>
           ))}
         </div>
-
-        <div className={`h-64 w-full ${caseItem.gradient}`} />
       </div>
     </div>
   );
